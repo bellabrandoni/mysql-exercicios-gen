@@ -91,4 +91,6 @@ SELECT * FROM tb_pizzas WHERE preco > 45.00;
     SELECT * FROM tb_pizzas INNER JOIN tb_categorias
     ON tb_categorias.id = tb_pizzas.categoria_id;
     
-    
+    /*JUNTE  AS TABELA TABELAS PELO ID E MOSTRE APENAS AS PIZZAS COM DESCRIÇÃO DOCE */
+    SELECT * FROM tb_pizzas INNER JOIN tb_categorias
+    ON tb_categorias.id = tb_pizzas.categoria_id WHERE descricao = "Doce";
